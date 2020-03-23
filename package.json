@@ -21,7 +21,8 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "release.prepare": "node scripts/release.js --any-branch",
     "release": "node scripts/release.js --publish --any-branch",
-    "test": "stencil test --spec"
+    "test": "stencil test --spec",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@stencil/core": "^1.8.11",
